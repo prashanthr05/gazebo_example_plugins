@@ -4,12 +4,13 @@
 
 We have a `gazebo_example_plugins` repository folder where we will store the files.
 
-To demonstrate this example, I will use a double pendulum. We will copy the double pendulum model from https://github.com/simbody/simbody/blob/master/examples/Gazebo2Simbody/models/double_pendulum.sdf into a file and name it `double_pendulum.world` and place it in the `world` folder
+To demonstrate this example, I will use a double pendulum. We will copy the double pendulum model from https://github.com/simbody/simbody/blob/master/examples/Gazebo2Simbody/models/double_pendulum.sdf into a file and name it `double_pendulum.world` and place it in the `world` folder. Additionally, we may also refactor a bit to keep the world files and the model files separate. So we will create the double pendulum model in the models folder and have a double pendulum world include the corresponding model.
 
 Add the path where you created the `double_pendulum.world` to the `GAZEBO_RESOURCE_PATH`,
 
 ```
 export GAZEBO_RESOURCE_PATH=$GAZEBO_RESOURCE_PATH:<path-to-repo-folder>/world
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:<path-to-repo-folder>/models
 ```
 
 
