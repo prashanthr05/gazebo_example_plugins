@@ -13,3 +13,7 @@ add_library(model_info SHARED include/ModelInfo.h
                               src/ModelInfo.cpp)
 target_link_libraries(model_info ${GAZEBO_LIBRARIES})
 
+add_library(world_gravity SHARED include/WorldGravity.h
+                                 src/WorldGravity.cpp)
+target_link_libraries(world_gravity ${GAZEBO_LIBRARIES})
+

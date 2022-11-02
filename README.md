@@ -70,3 +70,6 @@ List of Links:
 ```
 
 This is printed repeatedly since the corresponding logic is added in a callback function `OnUpdate()` within the plugin that is called repeatedly throughout the use of the model in the Gazebo world. However, for typical and correct operations, such data collection of configuration parameters or data that will not be changed, this logic must be implemented in `Load()` method which is called only once while loading the plugin.
+
+
+**Update:** A WorldPlugin was added to the `double_pendulum.world`. This plugin is called WorldGravity. It switches the direction of gravity in the Gazebo World every 100 counts. A print is shown on the console, while in the simulator, the pendulum acts accordingly to changing gravitational field.

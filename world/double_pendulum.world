@@ -15,5 +15,8 @@
     <include>
       <uri>model://double_pendulum</uri>
     </include>
+
+    <plugin name="gravity_mod" filename="libworld_gravity.so"/>
+
   </world>
 </sdf>
